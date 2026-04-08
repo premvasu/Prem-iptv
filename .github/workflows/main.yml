@@ -1,0 +1,22 @@
+name: Auto Update
+on:
+  schedule:
+    - cron: '0 */2 * * *' # ஒவ்வொரு 2 மணிநேரத்திற்கு ஒருமுறை புதுப்பிக்கும்
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Update
+        run: |
+          pip install requests
+          python update.py
+      - name: Save
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          git add playlist.m3u
+          git commit -m "Updated" || exit 0
+          git push
+          
