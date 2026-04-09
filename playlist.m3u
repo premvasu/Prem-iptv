@@ -1,8 +1,8 @@
-The deployment could not be found on Vercel.
-
-DEPLOYMENT_NOT_FOUND
-
-sfo1::9rttx-1775740132131-ca359aed1141
+<?php
+// ஜியோ டிவி ப்ராக்ஸி ஸ்கிரிப்ட்
+$url = "https://raw.githubusercontent.com/billythekids/jiotv/main/jio.m3u";
+echo file_get_contents($url);
+?>
 
 
 
