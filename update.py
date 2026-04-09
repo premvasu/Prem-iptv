@@ -11,13 +11,16 @@ AUTO_SOURCE = "https://github.com/alex4528x/m3u/raw/refs/heads/main/jtv.m3u"
 # நீங்கள் முதலில் எந்தப் பெயரை வைக்கிறீர்களோ அதுவே பிளேயரில் முதலில் வரும்
 TARGET_CHANNELS = [
     "zee thirai hd", 
-    "Vijay TV", 
-    "Zee Tamil",
+    "Vijay TV hd", 
+    "Vijay Super HD",
+    "Zee Tamil hd",
+    "vijay takker"
+    "colors tamil hd",
     "Jaya TV hd", 
     "Kalaignar TV", 
     "Raj TV", 
     "News7 Tamil", 
-    "Polimer News", 
+    " J News", 
     "Puthiya Thalaimurai", 
 ]
 
