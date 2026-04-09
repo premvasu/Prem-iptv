@@ -1,23 +1,40 @@
-name: Auto Update
+name: Auto Update Jio Master
 on:
   schedule:
-    # இது ஒவ்வொரு 30 நிமிடத்திற்கும் ஒருமுறை ஸ்கிரிப்டை இயக்கும்
-    - cron: '*/30 * * * *'
-  workflow_dispatch:
+    # இது ஒவ்வொரு 1 மணிநேரத்திற்கு ஒருமுறை ரன் ஆகும் (இதுதான் பாதுகாப்பானது)
+    - cron: '0 * * * *'
+  workflow_dispatch: # மேனுவலாக ரன் செய்யவும் இது உதவும்
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    # கிட்ஹாப் ஃபைல்களை மாற்றுவதற்கு அனுமதி அளிக்கிறது
+    permissions:
+      contents: write
+      
     steps:
-      - uses: actions/checkout@v2
-      - name: Update
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install Dependencies
         run: |
           pip install requests
-          python update.py
-      - name: Save
+
+      - name: Run Update Script
         run: |
-          git config --global user.email "action@github.com"
+          python update.py
+
+      - name: Commit and Push Changes
+        run: |
           git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
           git add playlist.m3u
-          git commit -m "Updated" || exit 0
+          # மாற்றம் இருந்தால் மட்டுமே கமிட் செய்யும்
+          git commit -m "Auto Updated Playlist: $(date)" || exit 0
           git push
           
