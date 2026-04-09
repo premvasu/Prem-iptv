@@ -1,114 +1,139 @@
 #EXTM3U
 
-#EXTHTTP:{"Cookie":"__hdnea__=st=1775715783~exp=1775737383~acl=/*~hmac=b55e5c44fad756342a8a79e834e0b3a5ca8d1a873fb491cc0a32b3d93002d8cf"}
+#EXTHTTP:{"Cookie":"__hdnea__=st=1775715783~exp=1775737383~acl=/*~hmac=b55e5c44fad756342a8a79e834e0b3a5ca8d1a873fb491cc0a32b3d93002d8cf","User-Agent":"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36","Origin":"https://jiotv.com"}
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://jiotv.com
 #EXTINF:-1 tvg-id="896" group-title="Entertainment" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Sun_TV_HD.png",Sun TV HD
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=f415c124a07c595b97c43cc9a96ded30:59e6c93d4fe43353b34a71eb87185aaa
 #EXTVLCOPT:http-user-agent=plaYtv/7.1.3 (Linux;Android 13) ygx/824.1 ExoPlayerLib/824.0
 https://jiotvpllive.cdn.jio.com/bpk-tv/Sun_TV_HD_MOB/WDVLive/index.mpd
 
-#EXTHTTP:{"Cookie":"__hdnea__=st=1775715783~exp=1775737383~acl=/*~hmac=b55e5c44fad756342a8a79e834e0b3a5ca8d1a873fb491cc0a32b3d93002d8cf"}
-#EXTINF:-1 tvg-id="3051" group-title="Movies" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/ZeeThiraiHD.png",Zee Thirai HD
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=9ecfc67bf2dd54fa84495c4c299c51ec:85337048d7be42ef66f6198a99376fa7
-#EXTVLCOPT:http-user-agent=plaYtv/7.1.3 (Linux;Android 13) ygx/824.1 ExoPlayerLib/824.0
-https://jiotvpllive.cdn.jio.com/bpk-tv/ZeeThiraiHD_BTS/output/index.mpd
-
-#EXTHTTP:{"Cookie":"__hdnea__=st=1775715783~exp=1775737383~acl=/*~hmac=b55e5c44fad756342a8a79e834e0b3a5ca8d1a873fb491cc0a32b3d93002d8cf"}
+#EXTHTTP:{"Cookie":"__hdnea__=st=1775715783~exp=1775737383~acl=/*~hmac=b55e5c44fad756342a8a79e834e0b3a5ca8d1a873fb491cc0a32b3d93002d8cf","User-Agent":"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36","Origin":"https://jiotv.com"}
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://jiotv.com
 #EXTINF:-1 tvg-id="628" group-title="Entertainment" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/ZeeTamil.png",Zee Tamil
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=3b5583d76a465054a7d444b307a9ff21:3f8d9e2207221a0cbcaf120754e4b2e4
 #EXTVLCOPT:http-user-agent=plaYtv/7.1.3 (Linux;Android 13) ygx/824.1 ExoPlayerLib/824.0
 https://jiotvpllive.cdn.jio.com/bpk-tv/ZeeTamil_BTS/output/index.mpd
 
-#EXTHTTP:{"Cookie":"__hdnea__=st=1775715783~exp=1775737383~acl=/*~hmac=b55e5c44fad756342a8a79e834e0b3a5ca8d1a873fb491cc0a32b3d93002d8cf"}
+#EXTHTTP:{"Cookie":"__hdnea__=st=1775715783~exp=1775737383~acl=/*~hmac=b55e5c44fad756342a8a79e834e0b3a5ca8d1a873fb491cc0a32b3d93002d8cf","User-Agent":"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36","Origin":"https://jiotv.com"}
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://jiotv.com
 #EXTINF:-1 tvg-id="3459" group-title="Devotional" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/swastiktv.png",Swastik TV
 #EXTVLCOPT:http-user-agent=plaYtv/7.1.3 (Linux;Android 13) ygx/824.1 ExoPlayerLib/824.0
 https://jiotvpllive.cdn.jio.com/bpk-tv/swastiktv/HLSPartner/index.m3u8
 
-#EXTHTTP:{"Cookie":"__hdnea__=st=1775715783~exp=1775737383~acl=/*~hmac=b55e5c44fad756342a8a79e834e0b3a5ca8d1a873fb491cc0a32b3d93002d8cf"}
+#EXTHTTP:{"Cookie":"__hdnea__=st=1775715783~exp=1775737383~acl=/*~hmac=b55e5c44fad756342a8a79e834e0b3a5ca8d1a873fb491cc0a32b3d93002d8cf","User-Agent":"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36","Origin":"https://jiotv.com"}
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://jiotv.com
 #EXTINF:-1 tvg-id="895" group-title="Music" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Sun_Music_HD.png",Sun Music HD
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=fa0c0f2dd6ce50208b77e16976e38d90:7f83a8e5178b6562d81968886fc3fe8a
 #EXTVLCOPT:http-user-agent=plaYtv/7.1.3 (Linux;Android 13) ygx/824.1 ExoPlayerLib/824.0
 https://jiotvpllive.cdn.jio.com/bpk-tv/Sun_Music_HD_MOB/WDVLive/index.mpd
 
-#EXTHTTP:{"Cookie":"__hdnea__=st=1775715783~exp=1775737383~acl=/*~hmac=b55e5c44fad756342a8a79e834e0b3a5ca8d1a873fb491cc0a32b3d93002d8cf"}
+#EXTHTTP:{"Cookie":"__hdnea__=st=1775715783~exp=1775737383~acl=/*~hmac=b55e5c44fad756342a8a79e834e0b3a5ca8d1a873fb491cc0a32b3d93002d8cf","User-Agent":"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36","Origin":"https://jiotv.com"}
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://jiotv.com
 #EXTINF:-1 tvg-id="709" group-title="Entertainment" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Adithya_TV.png",Adithya TV
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=b7d2d1228b275e219c9cdb282038d4c3:d75d95afc4a181803d2188456a052477
 #EXTVLCOPT:http-user-agent=plaYtv/7.1.3 (Linux;Android 13) ygx/824.1 ExoPlayerLib/824.0
 https://jiotvpllive.cdn.jio.com/bpk-tv/Adithya_TV_MOB/WDVLive/index.mpd
 
-#EXTHTTP:{"Cookie":"__hdnea__=st=1775715783~exp=1775737383~acl=/*~hmac=b55e5c44fad756342a8a79e834e0b3a5ca8d1a873fb491cc0a32b3d93002d8cf"}
+#EXTHTTP:{"Cookie":"__hdnea__=st=1775715783~exp=1775737383~acl=/*~hmac=b55e5c44fad756342a8a79e834e0b3a5ca8d1a873fb491cc0a32b3d93002d8cf","User-Agent":"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36","Origin":"https://jiotv.com"}
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://jiotv.com
 #EXTINF:-1 tvg-id="676" group-title="News" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Sun_News.png",Sun News
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=e8b0b960d29658969d74da596e2787e1:9b4051847231c9e1fd717df5aa5e0eea
 #EXTVLCOPT:http-user-agent=plaYtv/7.1.3 (Linux;Android 13) ygx/824.1 ExoPlayerLib/824.0
 https://jiotvpllive.cdn.jio.com/bpk-tv/Sun_News_MOB/WDVLive/index.mpd
 
-#EXTHTTP:{"Cookie":"__hdnea__=st=1775715783~exp=1775737383~acl=/*~hmac=b55e5c44fad756342a8a79e834e0b3a5ca8d1a873fb491cc0a32b3d93002d8cf"}
+#EXTHTTP:{"Cookie":"__hdnea__=st=1775715783~exp=1775737383~acl=/*~hmac=b55e5c44fad756342a8a79e834e0b3a5ca8d1a873fb491cc0a32b3d93002d8cf","User-Agent":"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36","Origin":"https://jiotv.com"}
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://jiotv.com
 #EXTINF:-1 tvg-id="3277" group-title="Sports" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Sports_1_Tamil_HD.png",Star Sports 1 Tamil HD
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=2272c0bc6b2e5cb090b1f55996e0026c:943923934de1d5536ab01c67fca8b337
 #EXTVLCOPT:http-user-agent=plaYtv/7.1.3 (Linux;Android 13) ygx/824.1 ExoPlayerLib/824.0
 https://jiotvpllive.cdn.jio.com/bpk-tv/Star_Sports_1_Tamil_HD_BTS/output/index.mpd
 
-#EXTHTTP:{"Cookie":"__hdnea__=st=1775715783~exp=1775737383~acl=/*~hmac=b55e5c44fad756342a8a79e834e0b3a5ca8d1a873fb491cc0a32b3d93002d8cf"}
+#EXTHTTP:{"Cookie":"__hdnea__=st=1775715783~exp=1775737383~acl=/*~hmac=b55e5c44fad756342a8a79e834e0b3a5ca8d1a873fb491cc0a32b3d93002d8cf","User-Agent":"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36","Origin":"https://jiotv.com"}
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://jiotv.com
 #EXTINF:-1 tvg-id="419" group-title="Entertainment" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Jaya_TV_HD.png",Jaya TV HD
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=b53a72551ecd5f5a93785ab2eea2c04a:91c08ce0ece5d6c8c167b104a7c9ab00
 #EXTVLCOPT:http-user-agent=plaYtv/7.1.3 (Linux;Android 13) ygx/824.1 ExoPlayerLib/824.0
 https://jiotvpllive.cdn.jio.com/bpk-tv/Jaya_TV_HD_BTS/output/index.mpd
 
-#EXTHTTP:{"Cookie":"__hdnea__=st=1775715783~exp=1775737383~acl=/*~hmac=b55e5c44fad756342a8a79e834e0b3a5ca8d1a873fb491cc0a32b3d93002d8cf"}
+#EXTHTTP:{"Cookie":"__hdnea__=st=1775715783~exp=1775737383~acl=/*~hmac=b55e5c44fad756342a8a79e834e0b3a5ca8d1a873fb491cc0a32b3d93002d8cf","User-Agent":"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36","Origin":"https://jiotv.com"}
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://jiotv.com
 #EXTINF:-1 tvg-id="1209" group-title="Entertainment" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Kalaignar_TV.png",Kalaignar TV
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=75dfe3fa680c58d6bc94815950c7d4f0:480cd1106bfb291a5735b0f9dc71bded
 #EXTVLCOPT:http-user-agent=plaYtv/7.1.3 (Linux;Android 13) ygx/824.1 ExoPlayerLib/824.0
 https://jiotvpllive.cdn.jio.com/bpk-tv/Kalaignar_TV_BTS/output/index.mpd
 
-#EXTHTTP:{"Cookie":"__hdnea__=st=1775715783~exp=1775737383~acl=/*~hmac=b55e5c44fad756342a8a79e834e0b3a5ca8d1a873fb491cc0a32b3d93002d8cf"}
+#EXTHTTP:{"Cookie":"__hdnea__=st=1775715783~exp=1775737383~acl=/*~hmac=b55e5c44fad756342a8a79e834e0b3a5ca8d1a873fb491cc0a32b3d93002d8cf","User-Agent":"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36","Origin":"https://jiotv.com"}
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://jiotv.com
 #EXTINF:-1 tvg-id="707" group-title="Entertainment" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Raj_TV.png",Raj TV
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=3b214e599f3f5fb3abd92164fa152caf:ec6050021a558cd31511717e1c0912e6
 #EXTVLCOPT:http-user-agent=plaYtv/7.1.3 (Linux;Android 13) ygx/824.1 ExoPlayerLib/824.0
 https://jiotvpllive.cdn.jio.com/bpk-tv/Raj_TV_BTS/output/index.mpd
 
-#EXTHTTP:{"Cookie":"__hdnea__=st=1775715783~exp=1775737383~acl=/*~hmac=b55e5c44fad756342a8a79e834e0b3a5ca8d1a873fb491cc0a32b3d93002d8cf"}
+#EXTHTTP:{"Cookie":"__hdnea__=st=1775715783~exp=1775737383~acl=/*~hmac=b55e5c44fad756342a8a79e834e0b3a5ca8d1a873fb491cc0a32b3d93002d8cf","User-Agent":"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36","Origin":"https://jiotv.com"}
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://jiotv.com
 #EXTINF:-1 tvg-id="673" group-title="News" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/News7_Tamil.png",News7 Tamil
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=ec09137d33685441840a6a203fb997f1:1f4fa4c7d54765cc7cc68b6f139aaae8
 #EXTVLCOPT:http-user-agent=plaYtv/7.1.3 (Linux;Android 13) ygx/824.1 ExoPlayerLib/824.0
 https://jiotvpllive.cdn.jio.com/bpk-tv/News7_Tamil_BTS/output/index.mpd
 
-#EXTHTTP:{"Cookie":"__hdnea__=st=1775715783~exp=1775737383~acl=/*~hmac=b55e5c44fad756342a8a79e834e0b3a5ca8d1a873fb491cc0a32b3d93002d8cf"}
+#EXTHTTP:{"Cookie":"__hdnea__=st=1775715783~exp=1775737383~acl=/*~hmac=b55e5c44fad756342a8a79e834e0b3a5ca8d1a873fb491cc0a32b3d93002d8cf","User-Agent":"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36","Origin":"https://jiotv.com"}
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://jiotv.com
 #EXTINF:-1 tvg-id="636" group-title="News" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Polimer_News.png",Polimer News
 #EXTVLCOPT:http-user-agent=plaYtv/7.1.3 (Linux;Android 13) ygx/824.1 ExoPlayerLib/824.0
 https://jiotvpllive.cdn.jio.com/bpk-tv/Polimer_News_BTS/output/index.mpd
 
-#EXTHTTP:{"Cookie":"__hdnea__=st=1775715783~exp=1775737383~acl=/*~hmac=b55e5c44fad756342a8a79e834e0b3a5ca8d1a873fb491cc0a32b3d93002d8cf"}
+#EXTHTTP:{"Cookie":"__hdnea__=st=1775715783~exp=1775737383~acl=/*~hmac=b55e5c44fad756342a8a79e834e0b3a5ca8d1a873fb491cc0a32b3d93002d8cf","User-Agent":"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36","Origin":"https://jiotv.com"}
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://jiotv.com
 #EXTINF:-1 tvg-id="1373" group-title="Kids" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Disney_Channel.png",Disney Channel
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=5181d3e6698055578cedc5bfc86b3e56:3dca7917d8cf9bb7095dc72b48bdcd3c
 #EXTVLCOPT:http-user-agent=plaYtv/7.1.3 (Linux;Android 13) ygx/824.1 ExoPlayerLib/824.0
 https://jiotvpllive.cdn.jio.com/bpk-tv/Disney_Channel_BTS/output/index.mpd
 
-#EXTHTTP:{"Cookie":"__hdnea__=st=1775715783~exp=1775737383~acl=/*~hmac=b55e5c44fad756342a8a79e834e0b3a5ca8d1a873fb491cc0a32b3d93002d8cf"}
+#EXTHTTP:{"Cookie":"__hdnea__=st=1775715783~exp=1775737383~acl=/*~hmac=b55e5c44fad756342a8a79e834e0b3a5ca8d1a873fb491cc0a32b3d93002d8cf","User-Agent":"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36","Origin":"https://jiotv.com"}
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://jiotv.com
 #EXTINF:-1 tvg-id="546" group-title="Kids" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Nick_Tamil.png",Nick Tamil
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=7abfb289bb2f5747be84407b70dbd689:c5745d4c06cb52aff050298db0f7d9d9
 #EXTVLCOPT:http-user-agent=plaYtv/7.1.3 (Linux;Android 13) ygx/824.1 ExoPlayerLib/824.0
 https://jiotvpllive.cdn.jio.com/bpk-tv/Nick_Tam_MOB/WDVLive/index.mpd
 
-#EXTHTTP:{"Cookie":"__hdnea__=st=1775715783~exp=1775737383~acl=/*~hmac=b55e5c44fad756342a8a79e834e0b3a5ca8d1a873fb491cc0a32b3d93002d8cf"}
+#EXTHTTP:{"Cookie":"__hdnea__=st=1775715783~exp=1775737383~acl=/*~hmac=b55e5c44fad756342a8a79e834e0b3a5ca8d1a873fb491cc0a32b3d93002d8cf","User-Agent":"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36","Origin":"https://jiotv.com"}
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://jiotv.com
 #EXTINF:-1 tvg-id="3430" group-title="Infotainment" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/DiscoveryTam.png",Discovery Tamil
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=f91eebcabe535ca79d870938b931282a:9b1820ed98bde518f9150fa4170e75e8
 #EXTVLCOPT:http-user-agent=plaYtv/7.1.3 (Linux;Android 13) ygx/824.1 ExoPlayerLib/824.0
 https://jiotvpllive.cdn.jio.com/bpk-tv/DiscoveryTam_BTS/output/index.mpd
 
-#EXTHTTP:{"Cookie":"__hdnea__=st=1775715783~exp=1775737383~acl=/*~hmac=b55e5c44fad756342a8a79e834e0b3a5ca8d1a873fb491cc0a32b3d93002d8cf"}
+#EXTHTTP:{"Cookie":"__hdnea__=st=1775715783~exp=1775737383~acl=/*~hmac=b55e5c44fad756342a8a79e834e0b3a5ca8d1a873fb491cc0a32b3d93002d8cf","User-Agent":"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36","Origin":"https://jiotv.com"}
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://jiotv.com
 #EXTINF:-1 tvg-id="3450" group-title="Infotainment" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/AnimalPlanetTam.png",Animal Planet Tamil
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=062bcd3dcd5a58fa9786324d4953f990:c888f2447dec7e13d91256fae731eb97
