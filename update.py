@@ -4,96 +4,69 @@ import re
 # உங்கள் Google Drive டைரக்ட் டவுன்லோட் லிங்க்
 MASTER_DRIVE_URL = "https://drive.google.com/uc?export=download&id=1Cb5xTE7PmtGaNqL71VBxGuTRfgaLg1iM"
 
-# ஆட்டோ அப்டேட் சேனல்கள் வரும் இடம்
+# ஆட்டோ அப்டேட் சோர்ஸ்
 AUTO_SOURCE = "https://github.com/alex4528x/m3u/raw/refs/heads/main/jtv.m3u"
 
-# --- இங்கே உங்கள் விருப்பப்படி வரிசைப்படுத்துங்கள் ---
-# நீங்கள் முதலில் எந்தப் பெயரை வைக்கிறீர்களோ அதுவே பிளேயரில் முதலில் வரும்
 TARGET_CHANNELS = [
-    "Sun TV", 
-    "Vijay TV", 
-    "Zee Thirai HD",
-    "Zee Tamil", 
-    "KTV", 
-    "Sun Music", 
-    "Adithya TV", 
-    "Sun News",
-    "Star Sports 1 Tamil",
-    "Sony Sports Ten 1",
-    "Jaya TV", 
-    "Kalaignar TV", 
-    "Raj TV", 
-    "News7 Tamil", 
-    "Polimer News", 
-    "Puthiya Thalaimurai", 
-    "Disney Channel", 
-    "Nick Tamil", 
-    "Discovery Tamil",
-    "National Geographic Tamil", 
-    "Animal Planet Tamil"
+    "Sun TV", "Vijay TV", "Zee Tamil", "KTV", "Sun Music", 
+    "Adithya TV", "Sun News", "Star Sports 1 Tamil", "Sony Sports Ten 1",
+    "Jaya TV", "Kalaignar TV", "Raj TV", "News7 Tamil", "Polimer News", 
+    "Puthiya Thalaimurai", "Disney Channel", "Nick Tamil", "Discovery Tamil",
+    "National Geographic Tamil", "Animal Planet Tamil"
 ]
 
 def get_auto_channels():
-    # ஒரு அகராதியை (Dictionary) உருவாக்கி சேனல்களை அதில் சேமிப்போம்
     found_channels = {}
     try:
-        resp = requests.get(AUTO_SOURCE)
+        resp = requests.get(AUTO_SOURCE, timeout=15)
         lines = resp.text.splitlines()
         temp_tags = []
+        
         for line in lines:
             if line.startswith("#EXTINF"):
                 temp_tags = [line]
             elif line.startswith("#KODIPROP") or line.startswith("#EXTVLCOPT"):
                 temp_tags.append(line)
             elif line.startswith("http"):
-                # இந்த சேனல் நமது TARGET_CHANNELS பட்டியலில் இருக்கிறதா என்று பார்க்கிறோம்
                 for target_name in TARGET_CHANNELS:
                     if target_name.lower() in str(temp_tags).lower():
                         channel_data = []
                         cookie_match = re.search(r"cookie=(.*)", line)
+                        
                         if cookie_match:
                             cookie_val = cookie_match.group(1).replace("%7C", "|")
-                            channel_data.append('#EXTHTTP:{"Cookie":"' + cookie_val + '"}')
+                            # ஸ்பார்க்கல் டிவி மற்றும் நெட்வொர்க் ஸ்ட்ரீம் இரண்டுக்கும் பொதுவான ஹெடர்
+                            # இதில் 'Origin' மற்றும் 'User-Agent' சேர்க்கப்பட்டுள்ளது
+                            ua = "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36"
+                            header_data = '#EXTHTTP:{"Cookie":"' + cookie_val + '","User-Agent":"' + ua + '","Origin":"https://jiotv.com"}'
+                            channel_data.append(header_data)
+                            
+                            # ஸ்பார்க்கல் டிவிக்கான பிரத்யேக VLC ஆப்ஷன்
+                            channel_data.append('#EXTVLCOPT:http-user-agent=' + ua)
+                            channel_data.append('#EXTVLCOPT:http-referrer=https://jiotv.com')
                         
                         channel_data.extend(temp_tags)
                         clean_url = line.split("?")[0].replace("%7C", "|")
                         channel_data.append(clean_url)
                         
-                        # சேனல் பெயரை கீ-யாக வைத்து தகவல்களைச் சேமிக்கிறோம்
                         found_channels[target_name] = "\n".join(channel_data)
                 temp_tags = []
     except: pass
-
-    # இப்போது நாம் கொடுத்த TARGET_CHANNELS வரிசைப்படி லிஸ்ட்டை உருவாக்குகிறோம்
-    ordered_list = []
-    for name in TARGET_CHANNELS:
-        if name in found_channels:
-            ordered_list.append(found_channels[name])
-    
-    return ordered_list
+    return [found_channels[name] for name in TARGET_CHANNELS if name in found_channels]
 
 def merge_playlists():
     try:
-        # 1. ஆட்டோ அப்டேட் சேனல்களை நாம் சொன்ன வரிசையில் எடுக்கிறது
-        auto_channels = get_auto_channels()
-        auto_content = "\n\n".join(auto_channels)
-        
-        # 2. கூகுள் டிரைவ் மாஸ்டர் லிஸ்ட்டை எடுக்கிறது
-        master_resp = requests.get(MASTER_DRIVE_URL)
+        auto_content = "\n\n".join(get_auto_channels())
+        master_resp = requests.get(MASTER_DRIVE_URL, timeout=15)
         master_content = master_resp.text
         master_lines = master_content.splitlines()
-        
-        if master_lines and master_lines[0].startswith("#EXTM3U"):
-            master_body = "\n".join(master_lines[1:])
-        else:
-            master_body = master_content
+        master_body = "\n".join(master_lines[1:]) if master_lines and master_lines[0].startswith("#EXTM3U") else master_content
 
-        # 3. இரண்டையும் இணைக்கிறது (முதலில் ஆட்டோ, பிறகு மாஸ்டர்)
         final_playlist = "#EXTM3U\n\n" + auto_content + "\n\n" + master_body
         
         with open("playlist.m3u", "w", encoding="utf-8") as f:
             f.write(final_playlist)
-        print("Success: Channels ordered exactly as requested!")
+        print("Sparkle TV Fix Applied!")
     except Exception as e:
         print(f"Error: {e}")
 
