@@ -25,40 +25,50 @@ def get_auto_channels():
         for line in lines:
             if line.startswith("#EXTINF"):
                 temp_tags = [line]
-            elif line.startswith("#KODIPROP"):
+            elif line.startswith("#KODIPROP") or line.startswith("#EXTVLCOPT"):
                 temp_tags.append(line)
             elif line.startswith("http"):
                 if any(name.lower() in str(temp_tags).lower() for name in TARGET_CHANNELS):
+                    # URL-ல் இருந்து குக்கீஸை மட்டும் பிரிக்கிறோம்
                     cookie_match = re.search(r"cookie=(.*)", line)
                     if cookie_match:
                         cookie_val = cookie_match.group(1).replace("%7C", "|")
-                        auto_list.append('#EXTHTTP:{"Cookie":"' + cookie_val + '"}')
+                        # Network Stream பிளேயருக்கான #EXTHTTP வரி
+                        http_header = '#EXTHTTP:{"Cookie":"' + cookie_val + '"}'
+                        auto_list.append(http_header)
+                    
+                    # Sparkle TV மற்றும் பிற பிளேயர்களுக்கான DRM/Tags
                     auto_list.extend(temp_tags)
-                    auto_list.append(line.split("?")[0])
+                    # %7C என்பதை | ஆக மாற்றி சுத்தமான URL-ஐ மட்டும் எடுக்கிறோம்
+                    clean_url = line.split("?")[0].replace("%7C", "|")
+                    auto_list.append(clean_url)
                 temp_tags = []
     except: pass
     return auto_list
 
 def merge_playlists():
     try:
-        # 1. கூகுள் டிரைவில் உள்ள உங்கள் 100 சேனல்களை எடுக்கிறது
-        master_resp = requests.get(MASTER_DRIVE_URL)
-        master_content = master_resp.text
-        
-        # 2. GitHub மூலம் ஆட்டோ அப்டேட் சேனல்களை எடுக்கிறது
+        # 1. GitHub மூலம் ஆட்டோ அப்டேட் சேனல்களை முதலில் எடுக்கிறது
         auto_channels = get_auto_channels()
         auto_content = "\n".join(auto_channels)
         
-        # 3. இரண்டையும் இணைக்கிறது
-        # உங்கள் டிரைவ் கோப்பில் ஏற்கனவே #EXTM3U இருந்தால் அதைச் சரிசெய்கிறது
-        if master_content.startswith("#EXTM3U"):
-            final_playlist = master_content + "\n\n" + auto_content
+        # 2. கூகுள் டிரைவில் உள்ள உங்கள் 100 சேனல்களை எடுக்கிறது
+        master_resp = requests.get(MASTER_DRIVE_URL)
+        master_content = master_resp.text
+        
+        # உங்கள் டிரைவ் கோப்பில் இருக்கும் #EXTM3U வரியை நீக்கிவிட்டு சுத்தமான டேட்டாவை எடுக்கிறது
+        master_lines = master_content.splitlines()
+        if master_lines and master_lines[0].startswith("#EXTM3U"):
+            master_body = "\n".join(master_lines[1:])
         else:
-            final_playlist = "#EXTM3U\n" + master_content + "\n\n" + auto_content
+            master_body = master_content
+
+        # 3. வரிசைப்படுத்துதல்: முதலில் ஆட்டோ அப்டேட், பிறகு உங்கள் 100 சேனல்கள்
+        final_playlist = "#EXTM3U\n\n" + auto_content + "\n\n" + master_body
         
         with open("playlist.m3u", "w", encoding="utf-8") as f:
             f.write(final_playlist)
-        print("Merge Success!")
+        print("Success: Auto-channels first, followed by Master list!")
     except Exception as e:
         print(f"Error: {e}")
 
