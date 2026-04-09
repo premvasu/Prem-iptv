@@ -6,7 +6,7 @@ TARGET_CHANNELS = [
     "Adithya TV", "Jaya TV", "Kalaignar TV", "Raj TV", "Sun News",
     "News7 Tamil", "Polimer News", "Puthiya Thalaimurai", "Star Sports 1 Tamil",
     "Sony Sports Ten 1", "Disney Channel", "Nick Tamil", "Discovery Tamil",
-    "National Geographic Tamil", "Animal Planet Tamil"
+    "National Geographic Tamil", "Animal Planet Tamil", zee thirai hd
 ]
 
 SOURCE_URL = "https://github.com/alex4528x/m3u/raw/refs/heads/main/jtv.m3u"
