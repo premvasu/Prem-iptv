@@ -1,48 +1,48 @@
 #EXTM3U
 
-#EXTHTTP:{"Cookie":"__hdnea__=st=1775732710~exp=1775754310~acl=/*~hmac=ad94f6260ac6e609cc7fdb04c6b0447be91615cc343bffe62dbf98277dea80bf"}
+#EXTHTTP:{"Cookie":"__hdnea__=st=1775751663~exp=1775773263~acl=/*~hmac=916904a30359ba56d21a01f428a9a48d0136779e094efb67ff8aff549420e896"}
 #EXTINF:-1 tvg-id="3051" group-title="Movies" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/ZeeThiraiHD.png",Zee Thirai HD
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=9ecfc67bf2dd54fa84495c4c299c51ec:85337048d7be42ef66f6198a99376fa7
 #EXTVLCOPT:http-user-agent=plaYtv/7.1.3 (Linux;Android 13) ygx/824.1 ExoPlayerLib/824.0
 https://jiotvpllive.cdn.jio.com/bpk-tv/ZeeThiraiHD_BTS/output/index.mpd
 
-#EXTHTTP:{"Cookie":"__hdnea__=st=1775732710~exp=1775754310~acl=/*~hmac=ad94f6260ac6e609cc7fdb04c6b0447be91615cc343bffe62dbf98277dea80bf"}
+#EXTHTTP:{"Cookie":"__hdnea__=st=1775751663~exp=1775773263~acl=/*~hmac=916904a30359ba56d21a01f428a9a48d0136779e094efb67ff8aff549420e896"}
 #EXTINF:-1 tvg-id="628" group-title="Entertainment" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/ZeeTamil.png",Zee Tamil
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=3b5583d76a465054a7d444b307a9ff21:3f8d9e2207221a0cbcaf120754e4b2e4
 #EXTVLCOPT:http-user-agent=plaYtv/7.1.3 (Linux;Android 13) ygx/824.1 ExoPlayerLib/824.0
 https://jiotvpllive.cdn.jio.com/bpk-tv/ZeeTamil_BTS/output/index.mpd
 
-#EXTHTTP:{"Cookie":"__hdnea__=st=1775732710~exp=1775754310~acl=/*~hmac=ad94f6260ac6e609cc7fdb04c6b0447be91615cc343bffe62dbf98277dea80bf"}
+#EXTHTTP:{"Cookie":"__hdnea__=st=1775751663~exp=1775773263~acl=/*~hmac=916904a30359ba56d21a01f428a9a48d0136779e094efb67ff8aff549420e896"}
 #EXTINF:-1 tvg-id="419" group-title="Entertainment" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Jaya_TV_HD.png",Jaya TV HD
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=b53a72551ecd5f5a93785ab2eea2c04a:91c08ce0ece5d6c8c167b104a7c9ab00
 #EXTVLCOPT:http-user-agent=plaYtv/7.1.3 (Linux;Android 13) ygx/824.1 ExoPlayerLib/824.0
 https://jiotvpllive.cdn.jio.com/bpk-tv/Jaya_TV_HD_BTS/output/index.mpd
 
-#EXTHTTP:{"Cookie":"__hdnea__=st=1775732710~exp=1775754310~acl=/*~hmac=ad94f6260ac6e609cc7fdb04c6b0447be91615cc343bffe62dbf98277dea80bf"}
+#EXTHTTP:{"Cookie":"__hdnea__=st=1775751663~exp=1775773263~acl=/*~hmac=916904a30359ba56d21a01f428a9a48d0136779e094efb67ff8aff549420e896"}
 #EXTINF:-1 tvg-id="1209" group-title="Entertainment" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Kalaignar_TV.png",Kalaignar TV
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=75dfe3fa680c58d6bc94815950c7d4f0:480cd1106bfb291a5735b0f9dc71bded
 #EXTVLCOPT:http-user-agent=plaYtv/7.1.3 (Linux;Android 13) ygx/824.1 ExoPlayerLib/824.0
 https://jiotvpllive.cdn.jio.com/bpk-tv/Kalaignar_TV_BTS/output/index.mpd
 
-#EXTHTTP:{"Cookie":"__hdnea__=st=1775732710~exp=1775754310~acl=/*~hmac=ad94f6260ac6e609cc7fdb04c6b0447be91615cc343bffe62dbf98277dea80bf"}
+#EXTHTTP:{"Cookie":"__hdnea__=st=1775751663~exp=1775773263~acl=/*~hmac=916904a30359ba56d21a01f428a9a48d0136779e094efb67ff8aff549420e896"}
 #EXTINF:-1 tvg-id="707" group-title="Entertainment" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Raj_TV.png",Raj TV
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=3b214e599f3f5fb3abd92164fa152caf:ec6050021a558cd31511717e1c0912e6
 #EXTVLCOPT:http-user-agent=plaYtv/7.1.3 (Linux;Android 13) ygx/824.1 ExoPlayerLib/824.0
 https://jiotvpllive.cdn.jio.com/bpk-tv/Raj_TV_BTS/output/index.mpd
 
-#EXTHTTP:{"Cookie":"__hdnea__=st=1775732710~exp=1775754310~acl=/*~hmac=ad94f6260ac6e609cc7fdb04c6b0447be91615cc343bffe62dbf98277dea80bf"}
+#EXTHTTP:{"Cookie":"__hdnea__=st=1775751663~exp=1775773263~acl=/*~hmac=916904a30359ba56d21a01f428a9a48d0136779e094efb67ff8aff549420e896"}
 #EXTINF:-1 tvg-id="673" group-title="News" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/News7_Tamil.png",News7 Tamil
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=ec09137d33685441840a6a203fb997f1:1f4fa4c7d54765cc7cc68b6f139aaae8
 #EXTVLCOPT:http-user-agent=plaYtv/7.1.3 (Linux;Android 13) ygx/824.1 ExoPlayerLib/824.0
 https://jiotvpllive.cdn.jio.com/bpk-tv/News7_Tamil_BTS/output/index.mpd
 
-#EXTHTTP:{"Cookie":"__hdnea__=st=1775732710~exp=1775754310~acl=/*~hmac=ad94f6260ac6e609cc7fdb04c6b0447be91615cc343bffe62dbf98277dea80bf"}
+#EXTHTTP:{"Cookie":"__hdnea__=st=1775751663~exp=1775773263~acl=/*~hmac=916904a30359ba56d21a01f428a9a48d0136779e094efb67ff8aff549420e896"}
 #EXTINF:-1 tvg-id="636" group-title="News" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Polimer_News.png",Polimer News
 #EXTVLCOPT:http-user-agent=plaYtv/7.1.3 (Linux;Android 13) ygx/824.1 ExoPlayerLib/824.0
 https://jiotvpllive.cdn.jio.com/bpk-tv/Polimer_News_BTS/output/index.mpd
@@ -52,18 +52,16 @@ https://jiotvpllive.cdn.jio.com/bpk-tv/Polimer_News_BTS/output/index.mpd
 
 
 #EXTM3U
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=9ecfc67bf2dd54fa84495c4c299c51ec:85337048d7be42ef66f6198a99376fa7
-#EXTINF:-1 tvg-id="3051" group-title="Movies" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/ZeeThiraiHD.png",Zee Thirai HD1
-#EXTHTTP:{"Cookie":"__hdnea__=st=1775732710~exp=1775754310~acl=/*~hmac=ad94f6260ac6e609cc7fdb04c6b0447be91615cc343bffe62dbf98277dea80bf"}
 
-#EXTVLCOPT:http-user-agent=plaYtv/7.1.3 (Linux;Android 13) ygx/824.1 ExoPlayerLib/824.0
-https://jiotvpllive.cdn.jio.com/bpk-tv/ZeeThiraiHD_BTS/output/index.mpd
+#EXTINF:-1 tvg-id="PolimerNews" ttvg-logo="https://www.polimernews.com/logo.png" group-title="Tamil News", Polimer News Live
+https://6186b72a6b473.streamlock.net/polimer/polimer.stream/playlist.m3u8
+
+
 
 
 =================Sports===============
 
-#EXTINF:-1 tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/SS1TAMHD_Thumbnail-v1/SS1TAMHD_Thumbnail.png",Star sports 1 Tamil HD
+#EXTINF:-1 tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/SS1TAMHD_Thumbnail-v1/SS1TAMHD_Thumbnail.png",Star
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=2272c0bc6b2e5cb090b1f55996e0026c:943923934de1d5536ab01c67fca8b337
 
