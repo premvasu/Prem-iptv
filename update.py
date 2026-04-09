@@ -1,7 +1,7 @@
 import requests
 
 # 1. உங்கள் Vercel லிங்க் (இங்கே உங்கள் உண்மையான Vercel URL-ஐப் போடவும்)
-MY_VERCEL_URL = "https://உங்கள்-லிங்க்-இங்கே.vercel.app"
+MY_VERCEL_URL = "https://jio-private-proxy.vercel.app"
 
 # 2. உங்கள் Google Drive மாஸ்டர் லிங்க்
 MASTER_DRIVE_URL = "https://drive.google.com/uc?export=download&id=1Cb5xTE7PmtGaNqL71VBxGuTRfgaLg1iM"
