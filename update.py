@@ -17,6 +17,9 @@ TARGET_CHANNELS = [
 
 def get_auto_channels():
     found_channels = {}
+    # ஸ்பார்க்கல் டிவிக்குத் தேவையான வலுவான User-Agent
+    ua = "AppleCoreMedia/1.0.0.19E241 (iPhone; iPhone OS 15_4; Microsoft)"
+    
     try:
         resp = requests.get(AUTO_SOURCE, timeout=15)
         lines = resp.text.splitlines()
@@ -35,15 +38,16 @@ def get_auto_channels():
                         
                         if cookie_match:
                             cookie_val = cookie_match.group(1).replace("%7C", "|")
-                            # ஸ்பார்க்கல் டிவி மற்றும் நெட்வொர்க் ஸ்ட்ரீம் இரண்டுக்கும் பொதுவான ஹெடர்
-                            # இதில் 'Origin' மற்றும் 'User-Agent' சேர்க்கப்பட்டுள்ளது
-                            ua = "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36"
-                            header_data = '#EXTHTTP:{"Cookie":"' + cookie_val + '","User-Agent":"' + ua + '","Origin":"https://jiotv.com"}'
+                            
+                            # 1. நெட்வொர்க் ஸ்ட்ரீம் பிளேயருக்கான ஹெடர்
+                            header_data = '#EXTHTTP:{"Cookie":"' + cookie_val + '","User-Agent":"' + ua + '","Origin":"https://jiotv.com","Referer":"https://jiotv.com/"}'
                             channel_data.append(header_data)
                             
-                            # ஸ்பார்க்கல் டிவிக்கான பிரத்யேக VLC ஆப்ஷன்
+                            # 2. ஸ்பார்க்கல் டிவி (VLC based) க்கான பிரத்யேக வரிகள்
                             channel_data.append('#EXTVLCOPT:http-user-agent=' + ua)
-                            channel_data.append('#EXTVLCOPT:http-referrer=https://jiotv.com')
+                            channel_data.append('#EXTVLCOPT:http-referrer=https://jiotv.com/')
+                            channel_data.append('#EXTVLCOPT:http-origin=https://jiotv.com')
+                            channel_data.append('#EXTVLCOPT:http-reconnect=true')
                         
                         channel_data.extend(temp_tags)
                         clean_url = line.split("?")[0].replace("%7C", "|")
@@ -62,11 +66,12 @@ def merge_playlists():
         master_lines = master_content.splitlines()
         master_body = "\n".join(master_lines[1:]) if master_lines and master_lines[0].startswith("#EXTM3U") else master_content
 
-        final_playlist = "#EXTM3U\n\n" + auto_content + "\n\n" + master_body
+        # பிளேலிஸ்ட்டின் ஆரம்பத்தில் ஸ்பார்க்கல் டிவிக்குத் தேவையான ஒரு பொதுவான User-Agent ஐயும் கொடுக்கிறோம்
+        final_playlist = "#EXTM3U x-tvg-url=\"\" \n\n" + auto_content + "\n\n" + master_body
         
         with open("playlist.m3u", "w", encoding="utf-8") as f:
             f.write(final_playlist)
-        print("Sparkle TV Fix Applied!")
+        print("Sparkle TV 403 Fix Applied Successfully!")
     except Exception as e:
         print(f"Error: {e}")
 
