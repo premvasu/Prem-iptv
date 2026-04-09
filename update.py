@@ -1,7 +1,13 @@
 import requests
 import re
 
-# உங்களுக்கு வேண்டிய 20 சேனல் பெயர்கள்
+# உங்கள் Google Drive டைரக்ட் டவுன்லோட் லிங்க்
+MASTER_DRIVE_URL = "https://drive.google.com/uc?export=download&id=1Cb5xTE7PmtGaNqL71VBxGuTRfgaLg1iM"
+
+# ஆட்டோ அப்டேட் சேனல்கள் வரும் இடம்
+AUTO_SOURCE = "https://github.com/alex4528x/m3u/raw/refs/heads/main/jtv.m3u"
+
+# நீங்கள் ஆட்டோ அப்டேட் செய்ய விரும்பும் 20 சேனல்கள்
 TARGET_CHANNELS = [
     "Sun TV", "Vijay TV", "Zee Tamil", "KTV", "Sun Music", 
     "Adithya TV", "Jaya TV", "Kalaignar TV", "Raj TV", "Sun News",
@@ -10,51 +16,52 @@ TARGET_CHANNELS = [
     "National Geographic Tamil", "Animal Planet Tamil"
 ]
 
-SOURCE_URL = "https://github.com/alex4528x/m3u/raw/refs/heads/main/jtv.m3u"
-
-def update_list():
+def get_auto_channels():
+    auto_list = []
     try:
-        response = requests.get(SOURCE_URL)
-        lines = response.text.splitlines()
-        
-        new_m3u = ["#EXTM3U"]
+        resp = requests.get(AUTO_SOURCE)
+        lines = resp.text.splitlines()
         temp_tags = []
-        
         for line in lines:
             if line.startswith("#EXTINF"):
                 temp_tags = [line]
             elif line.startswith("#KODIPROP"):
                 temp_tags.append(line)
             elif line.startswith("http"):
-                # நமது லிஸ்டில் உள்ள சேனலா என்று பார்க்கிறோம்
                 if any(name.lower() in str(temp_tags).lower() for name in TARGET_CHANNELS):
-                    
-                    # URL-ல் இருந்து குக்கீஸை மட்டும் பிரிக்கிறோம்
-                    # இதற்காக ஒரு 'Regular Expression' பயன்படுத்துகிறோம்
                     cookie_match = re.search(r"cookie=(.*)", line)
-                    
                     if cookie_match:
-                        cookie_val = cookie_match.group(1)
-                        # URL-ல் இருக்கும் %7C போன்றவற்றை | ஆக மாற்றுகிறோம்
-                        cookie_val = cookie_val.replace("%7C", "|")
-                        
-                        # நீங்கள் கேட்ட அந்த #EXTHTTP வரியை இங்கே உருவாக்குகிறோம்
-                        http_header = '#EXTHTTP:{"Cookie":"' + cookie_val + '"}'
-                        new_m3u.append(http_header)
-                        
-                        # மெயின் லிங்க்கில் இருந்து குக்கீஸ் பகுதியை நீக்கிவிட்டு சுத்தமான URL-ஐ மட்டும் எடுக்கிறோம்
-                        clean_url = line.split("?")[0]
-                        
-                        new_m3u.extend(temp_tags)
-                        new_m3u.append(clean_url)
+                        cookie_val = cookie_match.group(1).replace("%7C", "|")
+                        auto_list.append('#EXTHTTP:{"Cookie":"' + cookie_val + '"}')
+                    auto_list.extend(temp_tags)
+                    auto_list.append(line.split("?")[0])
                 temp_tags = []
+    except: pass
+    return auto_list
 
+def merge_playlists():
+    try:
+        # 1. கூகுள் டிரைவில் உள்ள உங்கள் 100 சேனல்களை எடுக்கிறது
+        master_resp = requests.get(MASTER_DRIVE_URL)
+        master_content = master_resp.text
+        
+        # 2. GitHub மூலம் ஆட்டோ அப்டேட் சேனல்களை எடுக்கிறது
+        auto_channels = get_auto_channels()
+        auto_content = "\n".join(auto_channels)
+        
+        # 3. இரண்டையும் இணைக்கிறது
+        # உங்கள் டிரைவ் கோப்பில் ஏற்கனவே #EXTM3U இருந்தால் அதைச் சரிசெய்கிறது
+        if master_content.startswith("#EXTM3U"):
+            final_playlist = master_content + "\n\n" + auto_content
+        else:
+            final_playlist = "#EXTM3U\n" + master_content + "\n\n" + auto_content
+        
         with open("playlist.m3u", "w", encoding="utf-8") as f:
-            f.write("\n".join(new_m3u))
-        print("Success: Playlist created with EXTHTTP headers!")
+            f.write(final_playlist)
+        print("Merge Success!")
     except Exception as e:
         print(f"Error: {e}")
 
 if __name__ == "__main__":
-    update_list()
+    merge_playlists()
     
