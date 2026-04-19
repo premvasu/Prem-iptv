@@ -2,17 +2,17 @@
 
 #EXTINF:-1 tvg-language="Hindi" group-title="JIO ⭕|Sports" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Sports_1_Tamil_HD.png",Star Sports 1 Tamil HD
 #EXTVLCOPT:http-user-agent=plaYtv/7.1.3 (Linux;Android 13) ygx/824.1 ExoPlayerLib/824.0
-#EXTVLCOPT:http-cookie=__hdnea__=st=1776514286~exp=1776535886~acl=/bpk-tv/Star_Sports_1_Tamil_HD_BTS/output/*~hmac=f0e7ca581604500c9e89df5809e451aac152c9d7bbf1d7333058648b39105544
+#EXTVLCOPT:http-cookie=__hdnea__=st=1776587261~exp=1776608861~acl=/bpk-tv/Star_Sports_1_Tamil_HD_BTS/output/*~hmac=c4e7a2cf2ea6ae1f5d0cfdb4ce97ff0f16cce5d1886393120e8f7918d058b8ec
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=2272c0bc6b2e5cb090b1f55996e0026c:943923934de1d5536ab01c67fca8b337
 https://jiotvpllive.cdn.jio.com/bpk-tv/Star_Sports_1_Tamil_HD_BTS/output/index.mpd
 
-#EXTINF:-1 tvg-language="Hindi" group-title="JIO ⭕|Sports" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Sports2_Tamil_HD.png",Star Sports 2 Tamil HD
+#EXTINF:-1 tvg-language="Hindi" group-title="JIO ⭕|Sports" tvg-logo="https://img.media.jio.com/tvpimages/50/43/302120_1749664850896_l_medium.jpg",Star Sports 2 Tamil HD
 #EXTVLCOPT:http-user-agent=plaYtv/7.1.3 (Linux;Android 13) ygx/824.1 ExoPlayerLib/824.0
-#EXTVLCOPT:http-cookie=clearkey
+#EXTVLCOPT:http-cookie=__hdnea__=st=1776587134~exp=1776608734~acl=/bpk-tv/Star_Sports2_Tamil_HD_BTS/WDVLive/*~hmac=133b99ae1f04643052f59df93565852737906e1fa542b183c25820708c225f8b
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=dc44fe6251825774b90d58dcfa7d94e0:63e3ae853f483a86752b5b9e6d61eb20
-https://jiotvpllive.cdn.jio.com/bpk-tv/Star_Sports2_Tamil_HD_BTS/output/index.mpd
+https://jiotvpllive.cdn.jio.com/bpk-tv/Star_Sports2_Tamil_HD_BTS/WDVLive/index.mpd
 
 #EXTINF:-1 tvg-id="No details available" tvg-name="ZEE THIRAI HD" tvg-logo="" group-title="ᯤ 𝖨𝖯𝖳𝖵 𝖲𝖬𝖠𝖱𝖳 |ENGLISH",ZEE THIRAI HD
 https://vt-ip.vodep39240327.workers.dev/3968.m3u8
