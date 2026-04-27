@@ -5,7 +5,7 @@ import re
 MASTER_DRIVE_URL = "https://drive.google.com/uc?export=download&id=1Cb5xTE7PmtGaNqL71VBxGuTRfgaLg1iM"
 
 # ஆட்டோ அப்டேட் சேனல்கள் வரும் இடம்
-AUTO_SOURCE = "https://m3u.8088y.fun/testing.m3u"
+AUTO_SOURCE = "https://raw.githubusercontent.com/etcvai/ExtenderMax/refs/heads/main/iptv.m3u8"
 
 # --- இங்கே உங்கள் விருப்பப்படி வரிசைப்படுத்துங்கள் ---
 # நீங்கள் முதலில் எந்தப் பெயரை வைக்கிறீர்களோ அதுவே பிளேயரில் முதலில் வரும்
