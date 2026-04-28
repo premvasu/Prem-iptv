@@ -1,52 +1,29 @@
 #EXTM3U
 
-#EXTINF:-1 tvg-id="3277" tvg-logo="https://img.media.jio.com/tvpimages/19/19/302122_1749662923298_l_medium.jpg" group-title="JIO++2",Star Sports 1 Tamil HD
-#EXTVLCOPT:http-user-agent=@StreamFlex19
-https://jiotvpllive.cdn.jio.com//bpk-tv/Star_Sports_1_Tamil_HD_BTS/output/index.mpd
+#EXTINF:-1 group-title="REAL IP1",Star Sports 2 Tamil HD - Rs 19.00
+http://103.229.254.25:7001/play/a0d1/index.m3u8
 
-#EXTINF:-1 tvg-id="3273" tvg-logo="https://img.media.jio.com/tvpimages/50/43/302120_1749664850896_l_medium.jpg" group-title="JIO++2",Star Sports 2 Tamil HD
-#EXTVLCOPT:http-user-agent=@StreamFlex19
-https://jiotvpllive.cdn.jio.com//bpk-tv/Star_Sports2_Tamil_HD_BTS/WDVLive/index.mpd
+#EXTINF:-1 tvg-id="0-9-zeetamil" group-title="ZEE5 IN" tvg-logo="https://akamaividz2.zee5.com/image/upload/w_374,h_374,c_fill,f_webp,q_auto:eco/resources/0-9-zeetamil/square/374x3749d2e3f5f0f4b4657aecb95f997357f6f",Zee Tamil HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+https://z5ak-cmaflive.zee5.com/cmaf/live/2105530/ZeeTamilHDELE/index-connected.m3u8
 
-#EXTINF:-1 tvg-id="3051" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/ZeeThiraiHD.png" group-title="JIO++2",Zee Thirai HD
-#EXTVLCOPT:http-user-agent=@StreamFlex19
-https://jiotvmblive.cdn.jio.com/bpk-tv/ZeeThiraiHD_MOB/WDVLive/index.mpd
+#EXTINF:-1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Jaya_TV_HD.png" group-title="JIO TV",Jaya TV HD
+http://103.180.212.191:3500/live/419.m3u8
 
-#EXTINF:-1 tvg-id="368" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Vijay_HD.png" group-title="JIO++2",Star Vijay HD
-#EXTVLCOPT:http-user-agent=@StreamFlex19
-https://jiotvmblive.cdn.jio.com/bpk-tv/Star_Vijay_HD_MOB/WDVLive/index.mpd
+#EXTINF:-1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Kalaignar_TV.png" group-title="JIO TV",Kalaignar TV
+http://103.180.212.191:3500/live/1209.m3u8
 
-#EXTINF:-1 tvg-id="3266" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Vijay_Super_HD.png" group-title="JIO++2",Vijay Super HD
-#EXTVLCOPT:http-user-agent=@StreamFlex19
-https://jiotvmblive.cdn.jio.com/bpk-tv/Vijay_Super_HD_MOB/WDVLive/index.mpd
+#EXTINF:-1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Raj_TV.png" group-title="JIO TV",Raj TV
+http://103.180.212.191:3500/live/707.m3u8
 
-#EXTINF:-1 tvg-id="1356" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/ZeeTamilHD.png" group-title="JIO++2",Zee Tamil HD
-#EXTVLCOPT:http-user-agent=@StreamFlex19
-https://jiotvmblive.cdn.jio.com/bpk-tv/ZeeTamilHD_MOB/WDVLive/index.mpd
+#EXTINF:-1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/News7_Tamil.png" group-title="JIO TV",News7 Tamil
+http://103.180.212.191:3500/live/673.m3u8
 
-#EXTINF:-1 tvg-id="419" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Jaya_TV_HD.png" group-title="JIO++2",Jaya TV HD
-#EXTVLCOPT:http-user-agent=@StreamFlex19
-https://jiotvmblive.cdn.jio.com/bpk-tv/Jaya_TV_HD_MOB/WDVLive/index.mpd
+#EXTINF:-1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/News_J.png" group-title="JIO TV",News J
+http://103.180.212.191:3500/live/1515.m3u8
 
-#EXTINF:-1 tvg-id="1209" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Kalaignar_TV.png" group-title="JIO++2",Kalaignar TV
-#EXTVLCOPT:http-user-agent=@StreamFlex19
-https://jiotvmblive.cdn.jio.com/bpk-tv/Kalaignar_TV_MOB/WDVLive/index.mpd
-
-#EXTINF:-1 tvg-id="707" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Raj_TV.png" group-title="JIO++2",Raj TV
-#EXTVLCOPT:http-user-agent=@StreamFlex19
-https://jiotvmblive.cdn.jio.com/bpk-tv/Raj_TV_MOB/WDVLive/index.mpd
-
-#EXTINF:-1 tvg-id="673" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/News7_Tamil.png" group-title="JIO++2",News7 Tamil
-#EXTVLCOPT:http-user-agent=@StreamFlex19
-https://jiotvmblive.cdn.jio.com/bpk-tv/News7_Tamil_MOB/WDVLive/index.mpd
-
-#EXTINF:-1 tvg-id="3234" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Chanakya_News_Jharkhand.png" group-title="JIO++2",Chanakya News Jharkhand
-#EXTVLCOPT:http-user-agent=@StreamFlex19
-https://jiotvmblive.cdn.jio.com/bpk-tv/Chanakya_News_Jharkhand_MOB/WDVLive/index.mpd
-
-#EXTINF:-1 tvg-id="677" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Puthiya_Thalimurai.png" group-title="JIO++2",Puthiya Thalimurai
-#EXTVLCOPT:http-user-agent=@StreamFlex19
-https://jiotvmblive.cdn.jio.com/bpk-tv/Puthiya_Thalimurai_MOB/WDVLive/index.mpd
+#EXTINF:-1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Puthiya_Thalimurai.png" group-title="JIO TV",Puthiya Thalimurai
+http://103.180.212.191:3500/live/677.m3u8
 
 #EXTINF:-1 tvg-id="3269" group-title="JioTV", Vijay Takkar 45
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
