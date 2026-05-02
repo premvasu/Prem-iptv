@@ -1,5 +1,8 @@
 #EXTM3U
 
+#EXTINF:-1 group-title="REAL IP1",Star Sports 2 Tamil HD - Rs 19.00
+http://103.229.254.25:7001/play/a0d1/index.m3u8
+
 #EXTINF:-1 tvg-id="0-9-zeetamil" group-title="ZEE5 IN" tvg-logo="https://akamaividz2.zee5.com/image/upload/w_374,h_374,c_fill,f_webp,q_auto:eco/resources/0-9-zeetamil/square/374x3749d2e3f5f0f4b4657aecb95f997357f6f",Zee Tamil HD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
 https://z5ak-cmaflive.zee5.com/cmaf/live/2105530/ZeeTamilHDELE/index-connected.m3u8
