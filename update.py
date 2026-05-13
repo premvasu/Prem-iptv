@@ -5,7 +5,7 @@ import re
 MASTER_DRIVE_URL = "https://drive.google.com/uc?export=download&id=1Cb5xTE7PmtGaNqL71VBxGuTRfgaLg1iM"
 
 # ஆட்டோ அப்டேட் சேனல்கள் வரும் இடம்
-AUTO_SOURCE = "https://tiny.cc/Pocket-TV"
+AUTO_SOURCE = "https://tamil-m3u-b58859.gitlab.io/"
 
 # --- இங்கே உங்கள் விருப்பப்படி வரிசைப்படுத்துங்கள் ---
 # நீங்கள் முதலில் எந்தப் பெயரை வைக்கிறீர்களோ அதுவே பிளேயரில் முதலில் வரும்
