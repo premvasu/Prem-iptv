@@ -1,26 +1,6 @@
 #EXTM3U
 
-#EXTINF:-1 tvg-id="0-9-zeetamil" group-title="ZEE5 IN" tvg-logo="https://akamaividz2.zee5.com/image/upload/w_374,h_374,c_fill,f_webp,q_auto:eco/resources/0-9-zeetamil/square/374x3749d2e3f5f0f4b4657aecb95f997357f6f",Zee Tamil HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
-https://z5ak-cmaflive.zee5.com/cmaf/live/2105530/ZeeTamilHDELE/index-connected.m3u8
 
-#EXTINF:-1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Jaya_TV_HD.png" group-title="JIO TV",Jaya TV HD
-http://103.180.212.191:3500/live/419.m3u8
-
-#EXTINF:-1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Kalaignar_TV.png" group-title="JIO TV",Kalaignar TV
-http://103.180.212.191:3500/live/1209.m3u8
-
-#EXTINF:-1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Raj_TV.png" group-title="JIO TV",Raj TV
-http://103.180.212.191:3500/live/707.m3u8
-
-#EXTINF:-1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/News7_Tamil.png" group-title="JIO TV",News7 Tamil
-http://103.180.212.191:3500/live/673.m3u8
-
-#EXTINF:-1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/News_J.png" group-title="JIO TV",News J
-http://103.180.212.191:3500/live/1515.m3u8
-
-#EXTINF:-1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Puthiya_Thalimurai.png" group-title="JIO TV",Puthiya Thalimurai
-http://103.180.212.191:3500/live/677.m3u8
 
 #EXTINF:-1 tvg-id="3269" group-title="JioTV", Vijay Takkar 45
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
