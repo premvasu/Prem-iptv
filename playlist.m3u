@@ -49,7 +49,7 @@ https://segment.yuppcdn.net/240122/kalaignartv/playlist.m3u8
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=1f0a57e1b999520d99fc92b43630e722:fa59423030d70507ec1cac2cfac2050d
 #EXTVLCOPT:http-user-agent=plaYtv/7.1.3 (Linux;Android 13) ygx/69.1 ExoPlayerLib/824.0
-https://jiotvmblive.cdn.jio.com/bpk-tv/Raj_TV_MOB/WDVLive/index.mpd
+https://d3kdywbtdfbp9z.cloudfront.net/v1/manifest/93ce20f0f52760bf38be911ff4c91ed02aa2fd92/dff423e0-3c82-46d6-9ecb-3baa96b5694a/b8640d6b-d131-4401-9451-944e1e65fe79/0.m3u8
 
 #EXTINF:-1 tvg-id="jio-673" tvg-logo="http://d229kpbsb5jevy.cloudfront.net/tv/150/150/bnw/news7tamil-black.png" group-title="News",News7 Tamil
 https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/news7_nim_https/240122/news7/playlist.m3u8
