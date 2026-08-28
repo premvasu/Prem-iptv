@@ -15,6 +15,7 @@ https://jiotvpllive.cdn.jio.com//bpk-tv/Star_Sports2_Tamil_HD_BTS/WDVLive/index.
 #EXTINF:-1 tvg-id="ts1182" group-title="Tamil" tvg-logo="https://raw.githubusercontent.com/vijay-iptv/logos/refs/heads/main/Zee_Thirai_HD.png",Zee Thirai HD
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=9ecfc67bf2dd54fa84495c4c299c51ec:85337048d7be42ef66f6198a99376fa7
+#EXTVLCOPT:http-user-agent=Denver1769
 https://game.denver69.fun/Jtv/j2Jc4z/Jtv.mpd
 
 #EXTINF:-1 tvg-id="496" group-title="Tamil" tvg-logo="https://tatalogo.pages.dev/496.png",Star Vijay HD
@@ -32,6 +33,7 @@ https://jiotvmblive.cdn.jio.com/bpk-tv/Vijay_Super_HD_MOB/WDVLive/index.mpd
 #EXTINF:-1 tvg-id="608" group-title="Tamil" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/ZeeTamilHD_Thumbnail_7022fe5b-89a2-4cca-a9d0-58e46baa6d5c.png",Zee Tamil HD
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=1ab3810fc9505eaf9121202a5acf3656:eab9ac2b629171ed27c105ea62ea4fda
+#EXTVLCOPT:http-user-agent=Denver1769
 https://game.denver69.fun/Jtv/j2Jc4z/Jtv.mpd
 
 #EXTINF:-1 tvg-id="708" group-title="Tamil" tvg-logo="https://tatalogo.pages.dev/708.png",Jaya TV HD
