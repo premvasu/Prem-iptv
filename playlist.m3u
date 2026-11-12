@@ -42,7 +42,10 @@ https://game.playindia.fun/Jtv/FoxRVM/Jtv.mpd
 https://login.bheem.tv/bpk-tv/22376/output/index.mpd
 
 #EXTINF:-1 tvg-id="1209" group-title="Tamil" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-819-j5m8fsfs-v1/imageContent-819-j5m8fsfs-m1.png",Kalaignar TV
-https://segment.yuppcdn.net/240122/kalaignartv/playlist.m3u8
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=3c9449e280e35edaaf676d95774e7fa2:325c78bfc283365dadc2c9986104e541
+#EXTVLCOPT:http-user-agent=plaYtv/7.1.3 (Linux;Android 13) ygx/69.1 ExoPlayerLib/824.0
+https://onekey.virey40690.workers.dev/mpd/1209
 
 #EXTINF:-1 tvg-id="707" group-title="Tamil" tvg-logo="https://tatalogo.pages.dev/439.png",Raj TV
 #KODIPROP:inputstream.adaptive.license_type=clearkey
