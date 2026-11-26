@@ -12,11 +12,11 @@ https://jiotvpllive.cdn.jio.com/bpk-tv/Star_Sports_1_Tamil_HD_BTS/WDVLive/index.
 #EXTVLCOPT:http-user-agent=plaYtv/7.1.3 (Linux;Android 13) ygx/69.1 ExoPlayerLib/824.0
 https://jiotvpllive.cdn.jio.com/bpk-tv/Star_Sports2_Tamil_HD_BTS/WDVLive/index.mpd
 
-#EXTINF:-1 tvg-id="3051" group-title="Tamil" tvg-logo="https://raw.githubusercontent.com/vijay-iptv/logos/refs/heads/main/Zee_Thirai_HD.png",Zee Thirai HD
+#EXTINF:-1 tvg-id="3051" group-title="Movies" tvg-logo="https://raw.githubusercontent.com/vijay-iptv/logos/refs/heads/main/Zee_Thirai_HD.png",Zee Thirai HD
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=58d0716748ee52f4a55cf7baa6e072bb:8fc185a1015f026fec82236bb0e096f4,c2d762acbea256c0bd67b92d59f69757:46c59697457af3a687426a4691393774
 #EXTVLCOPT:http-user-agent=plaYtv/7.1.3 (Linux;Android 13) ygx/69.1 ExoPlayerLib/824.0
-https://hjh-545.pages.dev/stream
+http://sflex.fun/Sflex-Jio/304103/manifest.mpd
 
 #EXTINF:-1 tvg-id="368" group-title="Tamil" tvg-logo="https://tatalogo.pages.dev/496.png",Star Vijay HD
 #KODIPROP:inputstream.adaptive.license_type=clearkey
